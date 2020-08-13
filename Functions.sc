@@ -133,11 +133,21 @@ if (myName == "Valdis") {
 println("This happens all the time")
 
 def checkName(myName:String, friendName:String) = {
+  var isSame = false
   if (myName == friendName) {
     println(s"Wow our names match perfectly my dear $friendName!")
+    isSame = true
   }
-  println("no matter")
+  println("Let's be friends no matter what!")
+  isSame = false
 }
 
 checkName("Valdis", "Līga")
 checkName("Valdis","Valdis")
+
+//if-s in Scala return something always. The last line.
+if (true) {
+  //do this
+} else {
+  //do this
+}
