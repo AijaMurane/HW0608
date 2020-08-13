@@ -1,3 +1,5 @@
+import scala.io.StdIn.readLine
+
 def print2(): Unit = {
   println("One line")
   println("Second line")
@@ -151,3 +153,20 @@ if (true) {
 } else {
   //do this
 }
+
+!true
+!false
+
+val b = 15
+println("Enter your number please")
+val c = readLine().toInt
+val answer =
+  if (b>c)
+    "B is larger than C"
+  else if (c>b)
+    "C is larger or equal to B"
+  else "B is equal to C"
+println(answer)
+
+//so if statements gives values in Scala
+
